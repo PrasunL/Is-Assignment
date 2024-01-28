@@ -432,9 +432,9 @@ h2 {
 
 #about h2 {
   font-family: "Helvetica", sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   color: var(--pink);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 #about p {
