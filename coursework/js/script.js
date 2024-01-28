@@ -10,7 +10,7 @@ function slider() {
   } else {
     x = 1;
   }
-  imgs.innerHTML = "<img src=./pictures/sliderImages/" + images[x - 1] + ">";
+  imgs.innerHTML = "<img src=./pictures/sliderImages/" + images[x - 1] + ">"; 
 }
 
 function validateForm() {
@@ -30,3 +30,19 @@ function validateForm() {
   return false;
 }
 
+
+function togglePopup(pdfFile) {
+  var popup = document.getElementById("pdfPopup");
+  var pdfViewer = document.getElementById("pdfViewer");
+  var pdfPath = "../cvs/" + pdfFile;
+      
+  pdfViewer.src = pdfPath;
+  popup.style.display = "block";
+}
+
+function closePopup() {
+  var popup = document.getElementById("pdfPopup");
+  var pdfViewer = document.getElementById("pdfViewer");
+  pdfViewer.src = ""; 
+  popup.style.display = "none";
+}
