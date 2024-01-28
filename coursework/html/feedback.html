@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Prasun Lamichhane"/>
+    <meta name="description" content="Rick's Printers - Your one-stop solution for quality printing services." />
+    <title>Rick's Printers</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        body {
+            background: linear-gradient(135deg, #323232, #171717, #595959);
+            color: #fff;
+            font-family: "Arial", sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://picsum.photos/200/300" alt="Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</i></a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="./about us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <div class="search-box">
+                <form name="search">
+                    <input type="text" class="input" placeholder="What do you want to search today?" name="txt">
+                </form>
+                <i class="fas fa-search"></i>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+    </header>   
+    <section id="feedback-main">
+        <div class="feedback-img">
+            <img src="../pictures/appreciation/appreciative.jpg" alt="Feedback Image">
+        </div>
+        <div class="feedback-form">
+            <div class="form-content">
+                <form id="form" name="form" onsubmit="validateForm()">
+                    <label>
+                        <p>First name: <br><br><input type="text" id="fname" name="fname" placeholder="First Name"
+                                class="generaltext">
+                                
+                            </p>
+                                
+                    </label>
+                    <label>
+                        <p>Last name: <br><br><input type="text" id="lname" name="lname" placeholder="Last Name" class="generaltext">
+                          
+                        </p>
+                    </label>
+                    <label>
+                        <p>Email: <br><br> <input type="text" id="email" name="email" placeholder="example@mail.com"
+                                class="generaltext">
+                                
+                            </p>
+                    </label>
+                    <label>
+                        <p>Gender:</p>
+                        <div class="radiostyle" style="font-size: 25px;">
+                            <label><input style="margin-left: 10px;" type="radio" name="gender" value="male">
+                                Male</label> <label><input style="margin-left: 50px;" type="radio" name="gender"
+                                    value="female"> Female
+                            </label>
+                        </div>
+                    </label>
+                    <label>
+                        <p>Feedback:</p><br>
+                        <textarea class="generaltext" id="feedback" name="feedback" placeholder="Write Your Message" rows="10"
+                            style="height: 210px; margin-left: 10px;" cols="80"></textarea>
+                           
+                        </label>
+                    <input type="submit" class="click-button"
+                        style="width:100px; height: 50px; position: relative; left: 300px; margin-top: 30px;">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>Contact Us</h4>
+                <p>777 Devil Street, Devilville, Kathmandu</p>
+                <p>Email: ricksprinters@gmail.com</p>
+                <p>Phone: +977 9840124009</p>
+                <a href="#" class="click-button" style="background-color: #0cbc81;">Give Feedback</a>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="./about us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"><span>Our Facebook page</span></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"><span>Our Twitter page</span></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"><span>Our Instagram page</span></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"><span>Our Linkedin page</span></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rick's Printers. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
