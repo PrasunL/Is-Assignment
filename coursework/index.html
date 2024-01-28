@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,11 +17,27 @@
       font-family: "Arial", sans-serif;
       font-size: 16px;
       line-height: 1.6;
-    } 
+    }
+
+    .close {
+      position: relative;
+      left: 98%;
+      bottom: 245px;
+    }
+
+    .close:hover {
+      color: #d905d9;
+    }
   </style>
 </head>
 
 <body>
+  <div id="imgPopup" class="popup">
+    <div class="popup-content">
+      <img src="./pictures/popups/welcomePopup.png" alt="Popup on welcome">
+      <span class="close"><i class="fa-solid fa-x"></i></span>
+    </div>
+  </div>
   <header>
     <div class="logo">
       <img src="./pictures/logo/logo.png" alt="Logo" />
@@ -66,16 +83,16 @@
       <br />
       <div class="product-flex">
         <div class="product-item">
-          <img src="https://picsum.photos/200" alt="product 1" />
+          <img src="./pictures/Our Products/laserprinter.jpg" alt="product 1" />
           <div class="overlay">
             <h3>Laser Printers</h3>
             <p>A high-speed laser printers for all your professional printing needs. Fast and efficient printing
               technology.</p>
-            <a href="#" class="click-button" >Shop Now</a>
+            <a href="#" class="click-button">Shop Now</a>
           </div>
         </div>
         <div class="product-item">
-          <img src="https://picsum.photos/200" alt="product 2" />
+          <img src="./pictures/Our Products/Inkjetprinter.jpg" alt="product 2" />
           <div class="overlay">
             <h3>Inkjet Printers</h3>
             <p>An advanced inkjet printers with vibrant color output. Perfect for creative projects and photo printing.
@@ -84,7 +101,7 @@
           </div>
         </div>
         <div class="product-item">
-          <img src="https://picsum.photos/200" alt="product 3" />
+          <img src="./pictures/Our Products/3dprinter.jpg" alt="product 3" />
           <div class="overlay">
             <h3>3D Printers</h3>
             <p>Create intricate 3D models with our state-of-the-art 3D printers. Ideal for prototyping and design
@@ -140,7 +157,8 @@
               Following this, the content brief section commences, offering
               brief explanation about the pages contained in the website. Finally, the footer encompasses external links
               to our Facebook,Linkedin
-              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our feedback form.</p>
+              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our
+              feedback form.</p>
           </div>
         </a>
         <a href="#" class="Brief-item">
@@ -152,7 +170,8 @@
               [Insert page description]
               Finally, the footer encompasses external links
               to our Facebook,Linkedin
-              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our feedback form.</p>
+              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our
+              feedback form.</p>
           </div>
         </a>
         <a href="#" class="Brief-item">
@@ -164,7 +183,8 @@
               [Insert page description]
               Finally, the footer encompasses external links
               to our Facebook,Linkedin
-              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our feedback form.</p>
+              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our
+              feedback form.</p>
           </div>
         </a>
         <a href="#" class="Brief-item">
@@ -176,7 +196,8 @@
               [Insert page description]
               Finally, the footer encompasses external links
               to our Facebook,Linkedin
-              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our feedback form.</p>
+              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our
+              feedback form.</p>
           </div>
         </a>
         <a href="./html/about us.html" class="Brief-item">
@@ -185,11 +206,13 @@
             <h3>About us page</h3>
             <p>Upon loading our About Us page, Positioned on the left is a compact logo,
               while a navigation bar is present giving users a easier way to navigate pages.
-                In our About US Page there is a simple message from us to the customers and below that there are the members of our team
-                listed behind our team leader and on clicking the individual members you will be redirected to their cvs.
+              In our About US Page there is a simple message from us to the customers and below that there are the
+              members of our team
+              listed behind our team leader and on clicking the individual members you will be redirected to their cvs.
               Finally, the footer encompasses external links
               to our Facebook,Linkedin
-              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our feedback form.</p>
+              Instagram, and Twitter profiles, alongside internal links to all pages on our site a button for our
+              feedback form.</p>
           </div>
         </a>
         <a href="./html/feedback.html" class="Brief-item">
@@ -198,10 +221,12 @@
             <h3>Feedbak Form</h3>
             <p>Upon loading our Feedback form, Positioned on the left is a compact logo,
               while a navigation bar is present giving users a easier way to navigate pages.
-              While on the left is a picture and on the right is the form where our users can give us the feedback message.
+              While on the left is a picture and on the right is the form where our users can give us the feedback
+              message.
               Finally, the footer encompasses external links
               to our Facebook,Linkedin
-              Instagram, and Twitter profiles, alongside internal links to all pages on our site and a button for our feedback form.</p>
+              Instagram, and Twitter profiles, alongside internal links to all pages on our site and a button for our
+              feedback form.</p>
           </div>
         </a>
       </div>
@@ -244,9 +269,14 @@
   </footer>
   <script src="./js/script.js""></script>
   <script>
-  //  window.onload = (event) => {
-  // alert("Hope you find shit");
-  // };
+    window.onload = function () {
+      var modal = document.getElementById("imgPopup");
+      modal.style.display = "block"; 
+      var close = document.getElementsByClassName("close")[0]; 
+      close.onclick = function () { 
+      modal.style.display = "none"; 
+      };
+    };
   </script>
 </body>
 

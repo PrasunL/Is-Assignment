@@ -10,7 +10,7 @@ function slider() {
   } else {
     x = 1;
   }
-  imgs.innerHTML = "<img src=./pictures/sliderImages/" + images[x - 1] + ">"; 
+  imgs.innerHTML = "<img src=./pictures/sliderImages/" + images[x - 1] + ">";
 }
 
 function validateForm() {
@@ -20,22 +20,27 @@ function validateForm() {
   var gender = document.querySelector('input[name="gender"]:checked');
   var feedback = document.getElementById("feedback").value;
 
-  if (fname === "" || lname === "" || email === "" || gender === null || feedback === "" || email ==="") {
-      alert("Please fill in all required fields");
-      return false;
-  }
-  else{
+  if (
+    fname === "" ||
+    lname === "" ||
+    email === "" ||
+    gender === null ||
+    feedback === "" ||
+    email === ""
+  ) {
+    alert("Please fill in all required fields");
+    return false;
+  } else {
     alert("Thank you for your feedback.");
   }
   return false;
 }
 
-
 function togglePopup(pdfFile) {
   var popup = document.getElementById("pdfPopup");
   var pdfViewer = document.getElementById("pdfViewer");
   var pdfPath = "../cvs/" + pdfFile;
-      
+
   pdfViewer.src = pdfPath;
   popup.style.display = "block";
 }
@@ -43,6 +48,6 @@ function togglePopup(pdfFile) {
 function closePopup() {
   var popup = document.getElementById("pdfPopup");
   var pdfViewer = document.getElementById("pdfViewer");
-  pdfViewer.src = ""; 
+  pdfViewer.src = "";
   popup.style.display = "none";
 }
