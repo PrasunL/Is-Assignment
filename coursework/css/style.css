@@ -507,3 +507,49 @@ h2 {
 .popup button:hover{
   color: var(--pink);
 }
+
+
+/* Research portion */    
+
+#research-main{
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 100px;
+}
+#research-main h1 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 28px;
+  color: var(--pink);
+  margin-top: 20px;
+}
+
+
+/* Description Styles */
+.description {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.description b{
+  color: var(--pink);
+  padding: 20px;
+}
+/* Container Styles */
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container .image {
+  width: 40%;
+  overflow:  hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shade);
+}
+
+.container .image img {
+  width: 100%;
+  height: auto;
+}
