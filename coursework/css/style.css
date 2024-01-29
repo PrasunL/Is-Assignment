@@ -486,7 +486,7 @@ h2 {
 
 .popup {
   width: 700px;
-  height: 800px;
+  height: 500px;
   display: none;
   position: fixed;
   top: 50%;
@@ -561,6 +561,7 @@ h2 {
   background: linear-gradient(135deg, #292929, #171717);
   padding: 100px;
   text-align: center;
+  
 }
 
 .blog-heading {
@@ -585,6 +586,7 @@ h2 {
 
 .blog-container {
   display: flex;
+  justify-content: center;
 }
 
 .blog-box {
