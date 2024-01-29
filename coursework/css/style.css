@@ -484,7 +484,7 @@ h2 {
 
 .popup {
   width: 700px;
-  height: 550px;
+  height: 800px;
   display: none;
   position: fixed;
   top: 50%;
@@ -497,8 +497,8 @@ h2 {
 }
 .popup button{
   position: relative;
-  left: 360px;
-  bottom: 550px;
+  left: 52%;
+  bottom: 800px;
   border: none;
   background: none;
   color:var(--white);
