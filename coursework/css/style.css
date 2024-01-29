@@ -556,3 +556,62 @@ h2 {
   height: auto;
 }
 
+
+#blog {
+  background: linear-gradient(135deg, #292929, #171717);
+  padding: 100px;
+  text-align: center;
+}
+
+.blog-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  color:var(--pink);
+}
+.blog-heading p{
+  padding: 20px;
+  color: var(--white);
+}
+
+.blog-heading span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-heading h3 {
+  font-size: 36px;
+}
+
+.blog-container {
+  display: flex;
+}
+
+.blog-box {
+  width: 600px;
+  margin-bottom: 30px;
+  box-shadow: var(--shade) 0 0 10px;
+  transition: transform 0.3s ease;
+  
+}
+
+.blog-img img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-text {
+  padding: 20px;
+}
+
+.blog-text span {
+  font-size: 14px;
+  color: var(--white);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
