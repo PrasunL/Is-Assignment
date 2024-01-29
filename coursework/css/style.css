@@ -266,6 +266,7 @@ h2 {
 
 .footer-social .social-icons li {
   margin-top: 10px;
+  
 }
 
 .footer-social .social-icons a {
@@ -277,6 +278,7 @@ h2 {
 .footer-social .social-icons a span {
   font-size: 15px;
   margin-left: 10px;
+  font-size: 20px;
 }
 
 .footer-social .social-icons a:hover {
@@ -537,13 +539,13 @@ h2 {
 /* Container Styles */
 .container {
   display: flex;
-  gap: 20px;
+  gap: 150px;
   justify-content: center;
   margin-top: 30px;
 }
 
 .container .image {
-  width: 40%;
+  width: 600px;
   overflow:  hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px var(--shade);
@@ -553,3 +555,4 @@ h2 {
   width: 100%;
   height: auto;
 }
+
