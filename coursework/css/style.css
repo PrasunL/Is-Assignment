@@ -56,6 +56,19 @@ a {
   transition: color 0.3s ease;
 }
 
+.Wpopup {
+  width: 700px;
+  height: 50%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: linear-gradient(135deg, var(--grad1), var(--grad2));
+  z-index: 1000;
+}
+
 /* search bar css */
 .search {
   display: flex;
@@ -459,7 +472,7 @@ h2 {
 
 .popup {
   width: 700px;
-  height: 50%;
+  height: 750px;
   display: none;
   position: fixed;
   top: 50%;
