@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Prasun Lamichhane"/>
+    <meta name="author" content="Prasun Lamichhane" />
     <meta name="description" content="Rick's Printers - Your one-stop solution for quality printing services." />
     <title>Rick's Printers</title>
     <link rel="stylesheet" href="../css/style.css" />
@@ -15,6 +15,33 @@
             color: #fff;
             font-family: "Arial", sans-serif;
             font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d905d9;
+            padding: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            bottom: 50px;
+        }
+
+        .arrow-table {
+            width: 100%;
+        }
+
+        .arrow {
+            font-size: 34px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: #fff;
+        }
+        .arrow:hover{
+            color: #0cbc81;
         }
     </style>
 </head>
@@ -26,7 +53,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html":">Home</i></a></li>
+                <li><a href="../index.html" :">Home</i></a></li>
                 <li><a href="./product.html" style="color: #d905d9;">Products</a></li>
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./research.html">Research</a></li>
@@ -40,13 +67,200 @@
                     <input type="text" class="input" placeholder="What do you want to search today?" name="txt">
                 </form>
             </div>
-    </header> 
-    
-    
-    <section id="product">
+    </header>
 
+
+    <section id="product">
+        <h1 style="font-family: sans-serif; text-align: center;">Our Products</h1>
+
+        <div class="product-container">
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage1'), ['../pictures/Images/product1/img1.jpg', '../pictures/Images/product1/img2.jpg', '../pictures/Images/product1/img3.jpg', '../pictures/Images/product1/img4.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product1/img1.jpg" alt="Product 1" class="product-image"
+                                id="productImage1"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage1'), ['../pictures/Images/product1/img1.jpg', '../pictures/Images/product1/img2.jpg', '../pictures/Images/product1/img3.jpg', '../pictures/Images/product1/img4.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 1</div>
+                    <div class="product-description">Canon Pixma G2020 3 in 1 Multi-Function Ink Tank Colour Printer
+                    </div>
+                    <div class="product-price">Rs 16800</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage2'), ['../pictures/Images/product2/img1.jpg', '../pictures/Images/product2/img2.jpg', '../pictures/Images/product2/img3.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product2/img1.jpg" alt="Product 2" class="product-image"
+                                id="productImage2"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage2'), ['../pictures/Images/product2/img1.jpg', '../pictures/Images/product2/img2.jpg', '../pictures/Images/product2/img3.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 2</div>
+                    <div class="product-description">Canon Pixma GM4070 Wireless Auto-Duplex Ink Tank B/W Multi-Function
+                        Printer with ADF for High Volume Printing</div>
+                    <div class="product-price">Rs 33000</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage3'), ['../pictures/Images/product3/img1.jpg', '../pictures/Images/product3/img2.jpg', '../pictures/Images/product3/img3.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product3/img1.jpg" alt="Product 3" class="product-image"
+                                id="productImage3"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage3'), ['../pictures/Images/product3/img1.jpg', '../pictures/Images/product3/img2.jpg', '../pictures/Images/product3/img3.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 3</div>
+                    <div class="product-description">Canon Pixma iX6870 A3 Size Wireless Colour Inkjet Printer</div>
+                    <div class="product-price">Rs 40000</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage4'), ['../pictures/Images/product4/img1.jpg', '../pictures/Images/product4/img2.jpg', '../pictures/Images/product4/img3.jpg', '../pictures/Images/product4/img4.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product4/img1.jpg" alt="Product 4" class="product-image"
+                                id="productImage4"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage4'), ['../pictures/Images/product4/img1.jpg', '../pictures/Images/product4/img2.jpg', '../pictures/Images/product4/img3.jpg', '../pictures/Images/product4/img4.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 4</div>
+                    <div class="product-description">HP LaserJet 107a Single Function Affordable Mono Printer - Upto 20
+                        PPM - White</div>
+                    <div class="product-price">Rs 22000</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage5'), ['../pictures/Images/product5/img1.jpg', '../pictures/Images/product5/img2.jpg', '../pictures/Images/product5/img3.jpg', '../pictures/Images/product5/img4.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product5/img1.jpg" alt="Product 5" class="product-image"
+                                id="productImage5"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage5'), ['../pictures/Images/product5/img1.jpg', '../pictures/Images/product5/img2.jpg', '../pictures/Images/product5/img3.jpg', '../pictures/Images/product5/img4.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 5</div>
+                    <div class="product-description">Brother DCP L2540DW 3 in 1 Laser Printer | Fast Printing And
+                        Scanning At Up To 30 ppm With Automatic Duplex</div>
+                    <div class="product-price">Rs 40000</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage6'), ['../pictures/Images/product6/img1.jpg', '../pictures/Images/product6/img2.jpg', '../pictures/Images/product6/img3.jpg', '../pictures/Images/product6/img4.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product6/img1.jpg" alt="Product 6" class="product-image"
+                                id="productImage6"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage6'), ['../pictures/Images/product6/img1.jpg', '../pictures/Images/product6/img2.jpg', '../pictures/Images/product6/img3.jpg', '../pictures/Images/product6/img4.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 6</div>
+                    <div class="product-description">Brother MFC-L3750CDW Laser MFC Printer - Color</div>
+                    <div class="product-price">Rs 118000</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage7'), ['../pictures/Images/product7/img1.jpg', '../pictures/Images/product7/img2.jpg', '../pictures/Images/product7/img3.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product7/img1.jpg" alt="Product 7" class="product-image"
+                                id="productImage7"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage7'), ['../pictures/Images/product7/img1.jpg', '../pictures/Images/product7/img2.jpg', '../pictures/Images/product7/img3.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 7</div>
+                    <div class="product-description">Flex Printing Machine 6Ft Size (Xp600 PrintHead)</div>
+                    <div class="product-price">Rs 510000</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage8'), ['../pictures/Images/product8/img1.jpg', '../pictures/Images/product8/img2.jpg', '../pictures/Images/product8/img3.jpg', '../pictures/Images/product8/img4.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product8/img1.jpg" alt="Product 8" class="product-image"
+                                id="productImage8"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage8'), ['../pictures/Images/product8/img1.jpg', '../pictures/Images/product8/img2.jpg', '../pictures/Images/product8/img3.jpg', '../pictures/Images/product8/img4.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 8</div>
+                    <div class="product-description">BIQU B1 BX 3D Printer</div>
+                    <div class="product-price">Rs 112000</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <table class="arrow-table">
+                    <tr>
+                        <td><button class="arrow"
+                                onclick="lchng(document.getElementById('productImage9'), ['../pictures/Images/product9/img1.jpg', '../pictures/Images/product9/img2.jpg', '../pictures/Images/product9/img3.jpg', '../pictures/Images/product9/img4.jpg'])">&lt;</button>
+                        </td>
+                        <td><img src="../pictures/Images/product9/img1.jpg" alt="Product 9" class="product-image"
+                                id="productImage9"></td>
+                        <td><button class="arrow"
+                                onclick="chng(document.getElementById('productImage9'), ['../pictures/Images/product9/img1.jpg', '../pictures/Images/product9/img2.jpg', '../pictures/Images/product9/img3.jpg', '../pictures/Images/product9/img4.jpg'])">&gt;</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product-details">
+                    <div class="product-title">Product 9</div>
+                    <div class="product-description">Anycubic Photon M3</div>
+                    <div class="product-price">Rs 60000</div>
+                    <button class="buy-button" onclick="buymsg()">Buy Now</button>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
 
     <footer>
         <div class="footer-content">
@@ -70,17 +284,49 @@
             <div class="footer-social">
                 <h4>Follow Us</h4>
                 <ul class="social-icons">
-                  <li><a href="https://www.facebook.com/IslingtonCollege"><span>Our Facebook page</span></a></li>
-                  <li><a href="https://twitter.com"><span>Our Twitter page</span></a></li>
-                  <li><a href="https://www.instagram.com/islingtoncollege/"><span>Our Instagram page</span></a></li>
-                  <li><a href="https://www.linkedin.com/company/islington-college/"><span>Our Linkedin page</span></a></li>
+                    <li><a href="https://www.facebook.com/IslingtonCollege"><span>Our Facebook page</span></a></li>
+                    <li><a href="https://twitter.com"><span>Our Twitter page</span></a></li>
+                    <li><a href="https://www.instagram.com/islingtoncollege/"><span>Our Instagram page</span></a></li>
+                    <li><a href="https://www.linkedin.com/company/islington-college/"><span>Our Linkedin page</span></a>
+                    </li>
                 </ul>
-              </div>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Rick's Printers. All rights reserved. | Privacy Policy | Terms of Service</p>
     </footer>
     <script src="../js/script.js"></script>
+    <script>
+        var cnt = 0;
+
+        function chng(imageElement, images) {
+            cnt++;
+
+            var len = images.length;
+            if (cnt < len) {
+                imageElement.src = images[cnt];
+            } else if (cnt == len) {
+                imageElement.src = images[0];
+                cnt = 0;
+            }
+        }
+
+        function lchng(imageElement, images) {
+            cnt--;
+
+            var len = images.length;
+            if (cnt >= 0) {
+                imageElement.src = images[cnt];
+            } else if (cnt < 0) {
+                imageElement.src = images[len - 1];
+                cnt = len - 1;
+            }
+        }
+
+        function buymsg() {
+            alert("Thank you for buying");
+        }
+    </script>
 </body>
 
 </html>
