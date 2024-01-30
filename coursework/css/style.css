@@ -459,7 +459,7 @@ h2 {
 
 .popup {
   width: 700px;
-  height: 750px;
+  height: 50%;
   display: none;
   position: fixed;
   top: 50%;
