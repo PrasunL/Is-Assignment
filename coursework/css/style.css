@@ -1,3 +1,5 @@
+
+/* Declaring variables */
 :root {
   --grad1: #292929;
   --grad2: #171717;
@@ -11,7 +13,7 @@
   padding: 0;
 }
 
-/* Header */
+/* Header CSS*/
 
 .logo img {
   width: 150px;
@@ -19,7 +21,7 @@
   border-radius: 50%;
 }
 
-/* Navigation */
+/* Navigation Bar for all PAge CSS*/
 nav {
   position: relative;
   bottom: 70px;
@@ -54,7 +56,7 @@ a {
   transition: color 0.3s ease;
 }
 
-/* search box */
+/* search bar css */
 .search {
   display: flex;
   justify-content: center;
@@ -76,25 +78,8 @@ a {
   border: var(--white) solid 2px;
 }
 
-.search-box i {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: var(--white);
-}
 
-.fa-cart-shopping {
-  position: relative;
-  left: 750px;
-}
-
-.fa-cart-shopping:hover {
-  color: var(--shade);
-}
-
-/* Carousel */
+/* Image Slider CSS */
 #carousel {
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
   padding: 20px;
@@ -114,7 +99,7 @@ img {
   height: 100%;
 }
 
-/* product Section */
+/* Product in home page CSS */
 #product {
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
   padding: 100px;
@@ -181,7 +166,7 @@ h2 {
   text-shadow: 2px 2px 4px black;
 }
 
-/* Review Section */
+/* Review portion of Home page CSS */
 #review {
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
   padding: 100px;
@@ -209,7 +194,7 @@ h2 {
   margin-left: 50px;
 }
 
-/* Footer */
+/* Footer of All page CSS */
 .footer {
   background: linear-gradient(135deg, var(--grad2), var(--grad1));
   padding: 20px;
@@ -293,7 +278,7 @@ h2 {
   color: var(--pink);
 }
 
-/* click buttons */
+
 .click-button {
   display: inline-block;
   background-color: var(--pink);
@@ -309,7 +294,7 @@ h2 {
   background-color: var(--shade);
 }
 
-/* feedback starts here */
+/* FeedBack Page CSS */
 #feedback-main {
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
   padding: 100px;
@@ -350,7 +335,7 @@ h2 {
   box-shadow: 0px 0px 5px var(--shade);
 }
 
-/* Brief Section */
+/* Content Brief on Homepage CSS */
 #Brief {
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
   padding: 100px;
@@ -370,9 +355,9 @@ h2 {
 
 .Brief-grid {
   display: grid;
-  grid-template-columns: repeat(3, 500px); /* Three columns with fixed width */
+  grid-template-columns: repeat(3, 500px); 
   gap: 20px;
-  align-items: stretch; /* Make items stretch vertically */
+  align-items: stretch; 
   justify-content: center;
 }
 
@@ -384,7 +369,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 0 10px var(--shade);
   transition: transform 0.3s ease;
-  width: 500px; /* Set a fixed width */
+  width: 500px; 
 }
 
 .Brief-item:hover {
@@ -413,6 +398,7 @@ h2 {
   text-shadow: 2px 2px 4px black;
 }
 
+/* About US Page CSS */
 #about {
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
   color: var(--white);
@@ -473,6 +459,7 @@ h2 {
 
 .popup {
   width: 700px;
+  height: 750px;
   display: none;
   position: fixed;
   top: 50%;
@@ -486,7 +473,7 @@ h2 {
 .popup button {
   position: relative;
   left: 52%;
-  bottom: 800px;
+  bottom: 760px;
   border: none;
   background: none;
   color: var(--white);
@@ -496,7 +483,7 @@ h2 {
   color: var(--pink);
 }
 
-/* Research portion */
+/* Research Page CSS */
 
 #research-main {
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
@@ -509,7 +496,7 @@ h2 {
   margin-top: 20px;
 }
 
-/* Description Styles */
+
 .description {
   text-align: center;
   margin-top: 20px;
@@ -520,7 +507,7 @@ h2 {
   color: var(--pink);
   padding: 20px;
 }
-/* Container Styles */
+
 .container {
   display: flex;
   gap: 150px;
@@ -540,6 +527,7 @@ h2 {
   height: auto;
 }
 
+/* Blog Page CSS */
 #blog {
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
   padding: 100px;
@@ -600,13 +588,14 @@ h2 {
   margin-bottom: 20px;
 }
 
-#product{
+/* Product Page CSS */
+#products{
   background: linear-gradient(135deg, var(--grad1), var(--grad2));
   padding: 100px;
   text-align: center;
 }
 
-#product .container{
+#products .container{
   color: var(--white);
   height: 200px;
   padding: 15px;
@@ -615,7 +604,7 @@ h2 {
   
 }
 
-#product .product-container {
+#products .product-container {
   
   display: flex;
   justify-content: center;
@@ -623,7 +612,7 @@ h2 {
   padding: 20px;
 }
 
-#product .product-card {
+#products .product-card {
   background-color: linear-gradient(135deg, var(--grad1), var(--grad2));
   width: 300px;
   margin: 20px;
@@ -633,36 +622,36 @@ h2 {
   align-content: center;
 }
 
-#product .product-image {
+#products .product-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-#product .product-details {
+#products .product-details {
   padding: 18px;
 }
 
-#product .product-title {
+#products .product-title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-#product .product-description {
+#products .product-description {
   font-size: 20px;
   color: var(--white);
   margin-bottom: 10px;
 }
 
-#product .product-price {
+#products .product-price {
   font-size: 20px;
   color: #f77062;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-#product .buy-button {
+#products .buy-button {
   background-color: #f77062;
   color: #fff;
   border: none;
@@ -673,6 +662,6 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
-#product .buy-button:hover {
+#products .buy-button:hover {
   background-color: var(--shade);
 }
